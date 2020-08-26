@@ -1,0 +1,87 @@
+insert into rodzaj_roweru(nazwa_rodzaju)
+values ('Górski');
+insert into rodzaj_roweru(nazwa_rodzaju)
+values ('Dzieciecy');
+insert into rodzaj_roweru(nazwa_rodzaju)
+values ('Szosowy');
+insert into rodzaj_roweru(nazwa_rodzaju)
+values ('Wyczynowy');
+insert into rodzaj_roweru(nazwa_rodzaju)
+values ('BMX');
+
+insert into Producent(nazwa_producenta)
+values ('Cross');
+insert into Producent(nazwa_producenta)
+values ('Shimano');
+insert into Producent(nazwa_producenta)
+values ('Romet');
+
+insert into nazwa_czesci(nazwa)
+values ('SteelSeries');
+insert into nazwa_czesci(nazwa)
+values ('MediumSeries');
+insert into nazwa_czesci(nazwa)
+values ('UltimateSeries');
+
+insert into rama(cena_ramy,ilosc_ramy_na_magazynie,id_producenta,id_nazwy_czesci)
+values (600,10,1,1);
+insert into rama(cena_ramy,ilosc_ramy_na_magazynie,id_producenta,id_nazwy_czesci)
+values (100,10,1,2);
+insert into rama(cena_ramy,ilosc_ramy_na_magazynie,id_producenta,id_nazwy_czesci)
+values (300,15,2,3);
+insert into rama(cena_ramy,ilosc_ramy_na_magazynie,id_producenta,id_nazwy_czesci)
+values (900,2,2,1);
+
+insert into hamulce(cena_hamulec,ilosc_hamulec_na_magazynie,id_producenta,id_nazwy_czesci)
+values (600,10,1,1);
+insert into hamulce(cena_hamulec,ilosc_hamulec_na_magazynie,id_producenta,id_nazwy_czesci)
+values (50,10,1,2);
+insert into hamulce(cena_hamulec,ilosc_hamulec_na_magazynie,id_producenta,id_nazwy_czesci)
+values (600,10,1,3);
+
+insert into siodelko(cena_siodelka,ilosc_siodelek_na_magazynie,id_producenta,id_nazwy_czesci)
+values (300,10,1,3);
+insert into siodelko(cena_siodelka,ilosc_siodelek_na_magazynie,id_producenta,id_nazwy_czesci)
+values (200,10,1,1);
+insert into siodelko(cena_siodelka,ilosc_siodelek_na_magazynie,id_producenta,id_nazwy_czesci)
+values (100,10,2,3);
+
+insert into zestaw_kol(cena_zestawu_kol,ilosc_zestawow_kol_na_m,id_producenta,id_nazwy_czesci)
+values (300,10,1,3);
+insert into zestaw_kol(cena_zestawu_kol,ilosc_zestawow_kol_na_m,id_producenta,id_nazwy_czesci)
+values (200,10,1,2);
+insert into zestaw_kol(cena_zestawu_kol,ilosc_zestawow_kol_na_m,id_producenta,id_nazwy_czesci)
+values (100,10,3,3);
+
+insert into komplet_opon(cena_kompletu_opon,ilosc_kompletu_opon_na_m,id_producenta,id_nazwy_czesci)
+values (300,10,1,3);
+insert into komplet_opon(cena_kompletu_opon,ilosc_kompletu_opon_na_m,id_producenta,id_nazwy_czesci)
+values (200,10,2,3);
+insert into komplet_opon(cena_kompletu_opon,ilosc_kompletu_opon_na_m,id_producenta,id_nazwy_czesci)
+values (100,10,1,3);
+
+insert into rower(nazwa_roweru,cena_roweru,ilosc_na_magazynie, id_rodzaju, id_ramy, id_zestawu_kol,id_kompletu_opon,id_hamulec,id_siodelka)
+values ('ProBike',3000,5,4,4,1,1,1,1);
+insert into rower(nazwa_roweru,cena_roweru,ilosc_na_magazynie, id_rodzaju, id_ramy, id_zestawu_kol,id_kompletu_opon,id_hamulec,id_siodelka)
+values ('Trapper',1500,5,1,4,2,2,3,2);
+insert into rower(nazwa_roweru,cena_roweru,ilosc_na_magazynie, id_rodzaju, id_ramy, id_zestawu_kol,id_kompletu_opon,id_hamulec,id_siodelka)
+values ('YoungRider',800,1,2,2,3,3,1,3);
+
+
+insert into klient (imie,nazwisko,adres, telefon,email)
+VALUES ('Adam', 'Abacki', 'ul.Konwaliowa 53',123456789, 'abackiadam@poczta.pl');
+insert into klient (imie,nazwisko,adres, telefon,email)
+VALUES ('Bartosz', 'Babacki', 'ul.Sosnowa',987654321, 'babackibartosz@poczta.pl');
+
+insert into faktura(id_klienta,id_roweru,data_sprzedazy, 
+ilosc_produktu,wartosc_faktury) 
+values(1,2,'20/01/01',1,3500); 
+insert into faktura(id_klienta,id_roweru,data_sprzedazy, 
+ilosc_produktu,wartosc_faktury) 
+values(2,2,'20/01/05',1,2500); 
+insert into faktura(id_klienta,id_roweru,data_sprzedazy, 
+ilosc_produktu,wartosc_faktury) 
+values(2,1,'20/01/05',2,1000); 
+
+
+
